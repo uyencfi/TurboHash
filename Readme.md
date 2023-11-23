@@ -24,6 +24,8 @@ A high performance concurrent hash table for pesistent memory.
 
 mount your Pmem device to `/mnt/pmem` directory with DAX mode. For example, `sudo mount -o dax /dev/pmem0 /mnt/pmem`
 
+Note to self: Our NVM mounting point is /pmemfs0
+
 install gflags to run test benchmark
 
 ```
