@@ -500,7 +500,7 @@ public:
                              name.c_str ());
                     method = nullptr;
                 } else {
-                    remove ("/mnt/pmem/turbohash");
+                    remove ("/pmemfs0/turbohash");
                     hashtable_ = new Hashtable ();
                     hashtable_->Initialize (FLAGS_bucket_count, FLAGS_cell_count);
                 }

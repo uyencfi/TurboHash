@@ -95,7 +95,7 @@ void AccessCacheLineSize () {
     char* addr = nullptr;
 #ifdef IS_PMEM
     size_t file_size = size;
-    std::string filename = "/mnt/pmem/pmem_test.data";
+    std::string filename = "/pmemfs0/pmem_test.data";
     char* pmem_addr = nullptr;
     size_t mapped_len;
     int is_pmem;

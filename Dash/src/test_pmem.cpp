@@ -23,7 +23,7 @@
 #include "lh_finger.h"
 #include "libpmemobj.h"
 
-std::string pool_name = "/mnt/pmem0/";
+std::string pool_name = "/pmemfs00/";
 DEFINE_string(index, "dash-ex",
               "the index to evaluate:dash-ex/dash-lh/cceh/level");
 DEFINE_string(k, "fixed", "the type of stored keys: fixed/variable");

@@ -31,7 +31,7 @@ using GFLAGS_NAMESPACE::ParseCommandLineFlags;
 using GFLAGS_NAMESPACE::RegisterFlagValidator;
 using GFLAGS_NAMESPACE::SetUsageMessage;
 
-DEFINE_string(filepath, "/mnt/pmem/objpool.data", "");
+DEFINE_string(filepath, "/pmemfs0/objpool.data", "");
 DEFINE_uint32(batch, 1000, "report batch");
 DEFINE_uint32(readtime, 0, "if 0, then we read all keys");
 DEFINE_uint32(thread, 1, "");

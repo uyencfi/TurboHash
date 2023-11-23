@@ -1693,7 +1693,7 @@ public:
     pptr<BucketMetaPmem> Initialize (uint32_t bucket_count, uint32_t cell_count) {
         // Step1. Initialize pmem library
         TurboRoot* turbo_root = nullptr;
-        bool succ = RegistPool (0, "/mnt/pmem/turbohash", TURBO_PMEM_LOG_SIZE, (void**)&turbo_root,
+        bool succ = RegistPool (0, "/pmemfs0/turbohash", TURBO_PMEM_LOG_SIZE, (void**)&turbo_root,
                                 sizeof (TurboRoot));
         if (!succ) {
             ERROR ("Fail to initialize turbohash");
@@ -1760,7 +1760,7 @@ public:
     void Recover () {
         // Step1. Open the pmem file
         TurboRoot* turbo_root = nullptr;
-        bool succ = RegistPool (0, "/mnt/pmem/turbohash", TURBO_PMEM_LOG_SIZE, (void**)&turbo_root,
+        bool succ = RegistPool (0, "/pmemfs0/turbohash", TURBO_PMEM_LOG_SIZE, (void**)&turbo_root,
                                 sizeof (TurboRoot));
         if (!succ) {
             printf ("Recover fail\n");

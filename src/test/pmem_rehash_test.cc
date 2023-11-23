@@ -15,9 +15,9 @@ using HashTable = turbo_pmem::unordered_map<std::string, std::string>;
 #endif
 
 int main () {
-    remove ("/mnt/pmem/turbo_hash_pmem_basemd");
-    remove ("/mnt/pmem/turbo_hash_pmem_desc");
-    remove ("/mnt/pmem/turbo_hash_pmem_sb");
+    remove ("/pmemfs0/turbo_hash_pmem_basemd");
+    remove ("/pmemfs0/turbo_hash_pmem_desc");
+    remove ("/pmemfs0/turbo_hash_pmem_sb");
     const size_t COUNT = 1000000;
 
     auto* hashtable = new HashTable (4096, 16);

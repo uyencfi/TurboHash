@@ -15,7 +15,7 @@ int main () {
             exit (0);
     }
     size_t file_size = 1LU << 30;
-    std::string filename = "/mnt/pmem/pmem_test.data";
+    std::string filename = "/pmemfs0/pmem_test.data";
     char* pmem_addr = nullptr;
     size_t mapped_len;
     int is_pmem;

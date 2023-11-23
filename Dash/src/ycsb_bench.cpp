@@ -36,7 +36,7 @@ using GFLAGS_NAMESPACE::SetUsageMessage;
 
 DEFINE_int64(pool_size, 1024ul * 1024ul * 1024ul * 64ul,
              "pool size. default 64GB");
-DEFINE_string(filepath, "/mnt/pmem/dash.data", "");
+DEFINE_string(filepath, "/pmemfs0/dash.data", "");
 
 DEFINE_int32(segments, 16 * 1024,
              "the initial number of segments in extendible hashing. 16k has "

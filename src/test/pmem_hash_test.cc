@@ -6,9 +6,9 @@ using GFLAGS_NAMESPACE::RegisterFlagValidator;
 using GFLAGS_NAMESPACE::SetUsageMessage;
 
 int main () {
-    remove ("/mnt/pmem/turbo_hash_pmem_basemd");
-    remove ("/mnt/pmem/turbo_hash_pmem_desc");
-    remove ("/mnt/pmem/turbo_hash_pmem_sb");
+    remove ("/pmemfs0/turbo_hash_pmem_basemd");
+    remove ("/pmemfs0/turbo_hash_pmem_desc");
+    remove ("/pmemfs0/turbo_hash_pmem_sb");
 
     {
         const size_t COUNT = 100000;

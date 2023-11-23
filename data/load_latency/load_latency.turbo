@@ -25,7 +25,7 @@ Report interval:       0 s
 Stats interval:        200000000 records
 benchmarks:            loadlat
 ------------------------------------------------
-create pool_id: 0, /mnt/pmem/turbohash
+create pool_id: 0, /pmemfs0/turbohash
 [32mStart IPMWatcher for loadlat
 [0mloadlat      : 11931458.000 micros/op 0.000000 Mops/s;
 Nanoseconds per op:

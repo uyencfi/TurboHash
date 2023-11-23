@@ -79,9 +79,9 @@ function sudo_password() {
 	echo $USERPASS | sudo -Sk $*
 }
 
-sudo_password mkdir /mnt/pmem
-sudo_password chmod 0777 /mnt/pmem
-sudo_password mount -o size=2G -t tmpfs none /mnt/pmem
+sudo_password mkdir /pmemfs0
+sudo_password chmod 0777 /pmemfs0
+sudo_password mount -o size=2G -t tmpfs none /pmemfs0
 
 cd $WORKDIR
 INSTALL_DIR=/tmp/libpmemobj-cpp
@@ -104,7 +104,7 @@ cmake .. -DDEVELOPER_MODE=1 \
 			-DCOVERAGE=$COVERAGE \
 			-DCXX_STANDARD=17 \
 			-DTESTS_USE_VALGRIND=0 \
-			-DTEST_DIR=/mnt/pmem \
+			-DTEST_DIR=/pmemfs0 \
 			-DTESTS_USE_FORCED_PMEM=1 \
 			-DUSE_TBB=1 \
 
@@ -133,7 +133,7 @@ cmake .. -DDEVELOPER_MODE=1 \
 			-DTRACE_TESTS=1 \
 			-DCOVERAGE=$COVERAGE \
 			-DTESTS_USE_VALGRIND=1 \
-			-DTEST_DIR=/mnt/pmem \
+			-DTEST_DIR=/pmemfs0 \
 			-DTESTS_USE_FORCED_PMEM=1 \
 			-DUSE_TBB=1 \
 
@@ -167,7 +167,7 @@ cmake .. -DCMAKE_BUILD_TYPE=Release \
 			-DCOVERAGE=$COVERAGE \
 			-DCXX_STANDARD=17 \
 			-DTESTS_USE_VALGRIND=1 \
-			-DTEST_DIR=/mnt/pmem \
+			-DTEST_DIR=/pmemfs0 \
 			-DBUILD_EXAMPLES=0 \
 			-DTESTS_USE_FORCED_PMEM=1
 

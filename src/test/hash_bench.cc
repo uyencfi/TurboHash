@@ -500,9 +500,9 @@ public:
                              name.c_str ());
                     method = nullptr;
                 } else {
-                    remove ("/mnt/pmem/turbo_hash_pmem_basemd");
-                    remove ("/mnt/pmem/turbo_hash_pmem_desc");
-                    remove ("/mnt/pmem/turbo_hash_pmem_sb");
+                    remove ("/pmemfs0/turbo_hash_pmem_basemd");
+                    remove ("/pmemfs0/turbo_hash_pmem_desc");
+                    remove ("/pmemfs0/turbo_hash_pmem_sb");
                     hashtable_ = new Hashtable ();
                     hashtable_->Initialize (FLAGS_bucket_count, FLAGS_cell_count);
                 }

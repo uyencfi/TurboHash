@@ -25,7 +25,7 @@ Report interval:       0 s
 Stats interval:        200000000 records
 benchmarks:            load,delete,readrandom
 ------------------------------------------------
-create pool_id: 0, /mnt/pmem/turbohash
+create pool_id: 0, /pmemfs0/turbohash
 [32mStart IPMWatcher for load
 [0mload         :       0.080 micros/op 11.925358 Mops/s;
 --------------------------------------------------------------------------------------
