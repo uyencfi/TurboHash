@@ -12,3 +12,4 @@ CCEH-PMDK/ycsb_bench
 **/release
 testbench/thread.*
 testbench/*.data
+build/
