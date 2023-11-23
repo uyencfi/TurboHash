@@ -80,6 +80,7 @@ include_directories(
   "/usr/local/include"
   "${PROJECT_SOURCE_DIR}/src"  
   "${PROJECT_SOURCE_DIR}/lib"
+  "/home/uyen/jemalloc"
 )
 
 # add system local lib
